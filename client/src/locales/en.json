@@ -1,0 +1,399 @@
+{
+  "navbar": {
+    "home": "Home",
+    "products": "Products",
+    "contact": "Contact",
+    "searchPlaceholder": "Search for products",
+    "login": "Login",
+    "logout": "Logout",
+    "my_orders": "My Orders"
+  },
+  "orderNotice": {
+    "title": "Hot Deals",
+    "subtitle": "All products available at discounted prices.",
+    "call": "Call this number",
+    "whatsapp": "or",
+    "orderInstant": "to order instantly!",
+    "confirmationNote": "After placing the order, please contact us once.",
+    "deliveryHighlight": "🛑 Orders above ₹1000 are home delivered. Orders below ₹1000 must be picked up at the shop."
+  },
+  "banner": {
+    "heading1": "Discover the Best Grocery Essentials",
+    "heading2": "Specials on dals, rice, oils, spices, snacks — fresh to your home!",
+    "orderNow": "Order Now",
+    "altText": "Grocery banner"
+  },
+  "categories": {
+    "title": "Shop by Category",
+    "viewAll": "View All Categories",
+    "sections": {
+      "groceries": "Groceries & Food",
+      "beauty": "Beauty & Personal Care",
+      "household": "Household Needs"
+    },
+    "highlights": {
+      "groceriesDesc": "Fresh grains, pulses, and snacks for daily needs.",
+      "beautyDesc": "Top care products for skin, hair & wellness.",
+      "householdDesc": "Everything to keep your home sparkling clean."
+    },
+    "names": {
+      "attaRiceGrains": "Atta, Rice & Grains",
+      "dalPulses": "Dal & Pulses",
+      "oilGhee": "Oil & Ghee",
+      "masalaSpices": "Masala & Spices",
+      "saltSugar": "Salt & Sugar",
+      "teaCoffee": "Tea & Coffee",
+      "juicesColdDrinks": "Juices & Cold Drinks",
+      "maggieNoodlesPasta": "Maggie, Noodles & Pasta",
+      "snacksBiscuits": "Snacks & Biscuits",
+      "saucesSpreads": "Sauces & Spreads",
+      "chocolates": "Chocolates",
+      "milkDairies": "Milk & Dairies",
+      "cerealsDryFruits": "Cereals & Dry Fruits",
+      "bathBody": "Bath & Body",
+      "hairCare": "Hair Care",
+      "oralCare": "Oral Care",
+      "feminineHygiene": "Feminine Hygiene",
+      "skinFace": "Skin & Face",
+      "menGrooming": "Men’s Grooming",
+      "babyCare": "Baby Care",
+      "deosPerfumes": "Deos & Perfumes",
+      "pharmaWellness": "Pharma & Wellness",
+      "laundryDetergents": "Laundry & Detergents",
+      "toiletCleaners": "Toilet Cleaners"
+    },
+    "filteredTitle": "Products in {{category}}",
+    "notAvailable": "No products available in {{category}} yet."
+  },
+  "home": {
+    "kiranaSection": {
+      "title": "What Makes Our Kirana Special?",
+      "description": "At SriVenkataSaiKirana, we bring the warmth of your neighborhood grocery shop online...",
+      "points": {
+        "family": "Family-run & trusted",
+        "localBrands": "Local brands you know",
+        "dailyEssentials": "Essential groceries delivered",
+        "contactOrders": "Order via call or WhatsApp"
+      }
+    }
+  },
+  "delivery": {
+    "title": "🚚 Reliable Delivery",
+    "items": {
+      "fastTitle": "Fast Delivery",
+      "fastDesc": "Neatly packed and delivered in 60 minutes.",
+      "slotsTitle": "Daily Delivery Slots",
+      "slotsDesc": "Choose morning or evening delivery time.",
+      "secureTitle": "Secure Packaging",
+      "secureDesc": "Items hygienically packed and sealed."
+    }
+  },
+  "gallery": {
+    "title": "📸 Our Store Gallery",
+    "alt1": "Inside shop view – 1",
+    "alt2": "Inside shop view – 2",
+    "alt3": "Inside shop view – 3"
+  },
+  "about": {
+    "title": "🏪 About SriVenkataSaiKirana",
+    "description": "At SriVenkataSaiKirana, we are committed to providing the best groceries, oils, spices, and home care products for your daily needs. We deliver fresh, affordable, and trusted items straight to your home.\n\nWhether you’re cooking for the family or refilling household basics, we bring you the brands and local products you trust."
+  },
+  "contact": {
+"title": "📞 Contact & Support",
+    "getInTouchTitle": "Get in Touch",
+    "getInTouchText": "We’d love to hear from you! Reach out with any questions, feedback, or just to say hi 👋",
+    
+    "phone": {
+      "label": "📱 Phone Support",
+      "number": "+91-8309404932",
+      "hours": "Mon–Sun: 8 AM – 10 PM"
+    },
+    
+    "email": {
+      "label": "📧 Email Us",
+      "address": "support:kothakotasudheer9@gmail.com",
+      "response": "We respond within 24 hours"
+    },
+    
+    "visit": {
+      "label": "🏬 Visit Our Shop",
+      "address": "NH-5 Road, Palasa, Kasibugga",
+      "open": "Open: 8 AM – 10 PM"
+    },
+    
+    "location": "Sri Venkata Sai Kirana, Palasa",
+    
+    "sendMessageTitle": "Send us a Message",
+    "namePlaceholder": "Your Name",
+    "emailPlaceholder": "Your Email",
+    "messagePlaceholder": "Your Message",
+    "sendButton": "✉️ Send Message",
+    "successAlert": "✅ Thank you for contacting us! We’ll get back to you soon."
+  },
+  "login": {
+    "title": "Login to Your Account",
+    "email": "Email Address",
+    "emailPlaceholder": "Enter your email",
+    "password": "Password",
+    "passwordPlaceholder": "Enter your password",
+    "button": "Login",
+    "noAccount": "Don't have an account?",
+    "registerLink": "Register Now"
+  },
+  "register": {
+    "title": "Create New Account",
+    "name": "Full Name",
+    "namePlaceholder": "Enter your full name",
+    "email": "Email Address",
+    "emailPlaceholder": "Enter your email",
+    "password": "Password",
+    "passwordPlaceholder": "Create a password",
+    "button": "Register",
+    "haveAccount": "Already have an account?",
+    "loginLink": "Login"
+  },
+  "cart": {
+    "title": "Your Shopping Cart",
+    "empty": "Your cart is empty!",
+    "remove": "Remove",
+    "clear": "Clear Cart",
+    "total": "Total",
+    "choose_payment": "Choose Payment Method",
+    "cod": "Cash on Delivery",
+    "online": "Online Payment",
+    "proceed": "Proceed to Pay",
+    "place_order": "Place Order",
+    "proceed_online": "Proceed to Online Payment",
+    "order_success_cod": "Order placed successfully! You'll pay on delivery.",
+    "redirect_payment": "Redirecting to payment gateway..."
+  },
+   "ourProducts": "Our Products",
+  "priceDisclaimer": "📢 Note: Product prices are not displayed here as they vary depending on current market rates and selected quantity. Please contact us for the latest pricing.",
+  "products": {
+    "priceDisclaimer": "📢 Note: Product prices are not displayed here as they vary depending on current market rates and selected quantity. Please contact us for the latest pricing.",
+    "attaTitle": "Atta Products",
+    "riceTitle": "Rice Products",
+    "inStock": "In Stock",
+    "outOfStock": "Out of Stock",
+    "addToCart": "Add to Cart",
+    "added": "Added",
+    "alreadyInCart": "Already in Cart",
+    "addToWishlist": "Add to Wishlist",
+    "removeFromWishlist": "Remove from Wishlist"
+  },
+  "atta": {
+    "title": "Atta Products",
+    "inStock": "In Stock",
+    "outOfStock": "Out of Stock",
+    "addToCart": "Add to Cart",
+    "added": "Added",
+    "alreadyInCart": "Already in Cart",
+    "addToWishlist": "Add to Wishlist",
+    "removeFromWishlist": "Remove from Wishlist",
+    "names": {
+      "aashirvaad1kg": "Aashirvaad Superior MP Atta (1kg)",
+      "aashirvaad5kg": "Aashirvaad Superior MP Atta (5kg)",
+      "multi1kg": "Aashirvaad Multigrain Atta (1kg)",
+      "multi5kg": "Aashirvaad Multigrain Atta (5kg)",
+      "multi11kg": "Aashirvaad Multigrain Atta (11kg)",
+      "lalita1kg": "Lalita Atta (1kg)",
+      "lalita5kg": "Lalita Atta (5kg)",
+      "annapurna1kg": "Annapurna Atta Farm Fresh (1kg)",
+      "annapurna5kg": "Annapurna Atta Farm Fresh (5kg)",
+      "fortune0_5kg": "Fortune Chakki Fresh Atta (0.5kg)",
+      "fortune1kg": "Fortune Chakki Fresh Atta (1kg)",
+      "fortune5kg": "Fortune Chakki Fresh Atta (5kg)"
+    },
+    "descriptions": {
+      "aashirvaad1kg": "Made from premium MP wheat, perfect for soft rotis.",
+      "aashirvaad5kg": "Ideal for daily use with hygienic packaging.",
+      "multi1kg": "Blend of wheat, oats, maize, and chana. High in fiber.",
+      "multi5kg": "Family-size pack for health-conscious homes.",
+      "multi11kg": "Jumbo pack with multigrains for larger families.",
+      "lalita1kg": "Stone-ground whole wheat with natural aroma.",
+      "lalita5kg": "Economical and consistent quality flour.",
+      "annapurna1kg": "Stone-ground chakki atta for soft rotis.",
+      "annapurna5kg": "Made from chemical-free fresh wheat.",
+      "fortune0_5kg": "Trial pack of finely milled fresh atta.",
+      "fortune1kg": "Small pack for soft and tasty rotis.",
+      "fortune5kg": "Ideal for medium-sized families."
+    }
+  },
+  "labels": {
+    "bestSeller": "Best Seller"
+  },
+  "rice": {
+    "title": "Rice Products",
+    "note": "⚠️ Prices are not shown because they vary based on market value and quantity.\nAll rice is available in loose form from 0.5kg to 25kg.",
+    "looseAvailable": "Available in loose from 0.5kg to 25kg",
+    "addToCart": "Add to Cart",
+    "added": "Added",
+    "removeFromWishlist": "Remove from Wishlist",
+    "addToWishlist": "Add to Wishlist",
+    "names": {
+      "santhamani_cc": "Santhamani CC",
+      "santhamani_hmt": "Santhamani HMT",
+      "bell_hmt": "Bell HMT",
+      "lalita_hmt": "Lalita HMT",
+      "brundhavanam_cc": "Brundhavanam CC",
+      "brundhavanam_hmt": "Brundhavanam HMT",
+      "dkr_cc": "DKR CC",
+      "dkr_cd": "DKR CD",
+      "dkr_hmt": "DKR HMT",
+      "hmt_27": "27 HMT",
+      "999_cc": "999 CC",
+      "999_hmt": "999 HMT",
+      "scn_cc": "SCN CC",
+      "scn_hmt": "SCN HMT",
+      "akshaya_cc_5kg": "Akshaya CC 5kg",
+      "akshaya_cc_10kg": "Akshaya CC 10kg",
+      "akshaya_hmt_5kg": "Akshaya HMT 5kg",
+      "akshaya_hmt_10kg": "Akshaya HMT 10kg",
+      "akshaya_hmt_25kg": "Akshaya HMT 25kg"
+    },
+    "descriptions": {
+      "santhamani_cc": "Fine quality Santhamani CC rice, soft and fluffy.",
+      "santhamani_hmt": "Popular Santhamani HMT rice, great taste and aroma.",
+      "bell_hmt": "Bell brand premium HMT rice for everyday meals.",
+      "lalita_hmt": "Soft and nutritious Lalita HMT rice.",
+      "brundhavanam_cc": "Brundhavanam CC rice, ideal for regular cooking.",
+      "brundhavanam_hmt": "Brundhavanam HMT rice with rich texture.",
+      "dkr_cc": "DKR CC rice known for taste and quality.",
+      "dkr_cd": "DKR CD rice, coarse and perfect for special recipes.",
+      "dkr_hmt": "Premium DKR HMT rice – high in demand.",
+      "hmt_27": "HMT 27 rice – a reliable and tasty grain.",
+      "999_cc": "999 CC rice, affordable and soft-cooking.",
+      "999_hmt": "999 HMT – light, non-sticky rice for daily use.",
+      "scn_cc": "SCN CC rice, fresh and economical.",
+      "scn_hmt": "SCN HMT rice, balanced grain for all ages.",
+      "akshaya_cc_5kg": "5kg Akshaya CC – convenient and tasty.",
+      "akshaya_cc_10kg": "10kg Akshaya CC – excellent quality.",
+      "akshaya_hmt_5kg": "Akshaya HMT 5kg – good aroma and texture.",
+      "akshaya_hmt_10kg": "Akshaya HMT 10kg – family-friendly choice.",
+      "akshaya_hmt_25kg": "Akshaya HMT 25kg – bulk and budget friendly."
+    }
+  },
+    "wholeGrains": {
+    "title": "Whole Grains",
+    "inStock": "In Stock",
+    "outOfStock": "Out of Stock",
+    "addToCart": "Add to Cart",
+    "added": "Added",
+    "addToWishlist": "Add to Wishlist",
+    "removeFromWishlist": "Remove from Wishlist",
+    "selectQuantity": "Select Quantity",
+    "products": {
+      "korralu": "Foxtail Millet",
+      "udalu": "Barnyard Millet",
+      "samalu": "Little Millet",
+      "arkelu": "Kodo Millet",
+      "gantilu": "Proso Millet",
+      "jonalu": "Sorghum",
+      "andukorralu": "Browntop Millet",
+      "sajalu": "Pearl Millet",
+      "barley": "Barley",
+      "oats_05": "Oats (Lion Brand)",
+      "oats_1": "Oats (Lion Brand)"
+    },
+    "descriptions": {
+      "korralu": "Rich in iron and fiber, great for diabetic-friendly meals.",
+      "udalu": "Low in calories, suitable for weight loss diets.",
+      "samalu": "A great source of magnesium and B-vitamins.",
+      "arkelu": "Helps control blood sugar and cholesterol levels.",
+      "gantilu": "Good for nervous system and digestion.",
+      "jonalu": "Naturally gluten-free and rich in protein.",
+      "andukorralu": "High fiber grain beneficial for gut health.",
+      "sajalu": "Good for heart and bone health.",
+      "barley": "A rich source of dietary fiber, good for digestion and heart health. Available in 0.5kg to 25kg loose quantities.",
+      "oats_05": "Energy-rich whole grain, ideal for breakfast.",
+      "oats_1": "Rich in beta-glucan, helps lower cholesterol."
+    }
+  },
+  "dalPulses": {
+  "title": "Dal & Pulses",
+    "priceDisclaimer": "📢 Note: Product prices are not displayed here as they vary depending on current market rates and selected quantity. Please contact us for the latest pricing.",
+  "selectQuantity": "Select Quantity",
+  "inStock": "In Stock",
+  "outOfStock": "Out of Stock",
+  "addToCart": "Add to Cart",
+  "added": "Added to Cart",
+  "products": {
+    "agrorich": "Kandipapu (Agrorich)",
+    "kandipapu": "Kandipapu (Sona)",
+    "yera_kandipapu": "Kandipapu (Akolla)",
+    "minapapu_doublehorse": "Minapapu (Double Horse)",
+    "minapapu_gopuram": "Minapapu (Gopuram)",
+    "pasarapapu_doublehorse": "Pasarapapu (Double Horse)",
+    "pasarapapu_thumbup": "Pasarapapu (Thumb Up)",
+    "channapapu_shakti": "Channapapu (Shakti)",
+    "channapapu_loose": "Channapapu (Loose Chocolate)",
+    "kabuli": "Kabuli Chana",
+    "kombu": "Kombu Chana",
+    "bathani_white": "Bathani White",
+    "bathani_green": "Bathani Green",
+    "pesalu": "Pesalu",
+    "mingulu": "Mingulu",
+    "gingulu": "Gingulu",
+    "kandulu": "Kandulu",
+    "kodumulu": "Kodumulu",
+    "solu": "Solu",
+    "chengudulu": "Chengudulu",
+    "rajma": "Rajma",
+    "soyabean": "Soyabean (Chikkudu Pikkalu)"
+  },
+  "descriptions": {
+    "agrorich": "Premium quality toor dal from Agrorich, rich in protein and flavor.",
+    "kandipapu": "High-protein toor dal, ideal for daily sambar and dal recipes.",
+    "yera_kandipapu": "Akolla variety kandipapu with unique taste and quality.",
+    "minapapu_doublehorse": "Whole urad dal from Double Horse, best for vadas and idlis.",
+    "minapapu_gopuram": "Loose urad dal from Gopuram brand, ideal for everyday cooking.",
+    "pasarapapu_doublehorse": "Moong dal from Double Horse, yellow split and nutritious.",
+    "pasarapapu_thumbup": "Thumb Up brand moong dal with excellent taste and freshness.",
+    "channapapu_shakti": "Premium quality chana dal from Shakti, good for dal fry.",
+    "channapapu_loose": "Loose chocolate chana dal used in traditional Andhra recipes.",
+    "kabuli": "Creamy white kabuli chana perfect for chole and curries.",
+    "kombu": "Black chana rich in fiber and protein, suitable for sprouts too.",
+    "bathani_white": "White peas ideal for curries and chaat recipes.",
+    "bathani_green": "Green peas rich in vitamins, good for fried snacks and gravies.",
+    "pesalu": "Green gram used in pongal, pesarattu and light curries.",
+    "mingulu": "Small lentil used in village-style dishes and chutneys.",
+    "gingulu": "Tiny lentils used for herbal dishes and rural Andhra cooking.",
+    "kandulu": "Traditional pulse used in soups and medicinal stews.",
+    "kodumulu": "Tiny round pulse, locally used in tribal and traditional dishes.",
+    "solu": "Nutritious pulse commonly used in rural protein-rich recipes.",
+    "chengudulu": "Roasted black chickpeas used as snack or curry base.",
+    "rajma": "Kidney beans, perfect for Punjabi rajma chawal dishes.",
+    "soyabean": "Protein-rich soyabean seeds also called chikkudu pikkalu locally."
+  }
+},
+  "oilGhee": {
+    "title": "Oil & Ghee",
+    "products": {
+      "aadhaar": "Aadhaar Sunflower Oil",
+      "freedom": "Freedom Cooking Oil",
+      "groundnut": "Pure Groundnut Oil",
+      "form_alpha": "Form Alpha Refined Oil",
+      "form_priyagold": "Form Priya Gold Refined Oil",
+      "form_ruchigold": "Form Ruchi Gold Refined Oil",
+      "form_firstclass": "Form First Class Refined Oil",
+      "amul": "Amul Cow Ghee",
+      "hatsun": "Hatsun Pure Cow Ghee",
+      "nani": "Nani Desi Ghee",
+      "grb": "GRB Cow Ghee"
+    },
+    "descriptions": {
+      "aadhaar": "Cold‑pressed sunflower oil, ideal for everyday cooking and rich in vitamin E.",
+      "freedom": "Light refined oil blend suitable for frying and daily use.",
+      "groundnut": "100% pure groundnut oil—great for authentic south‑Indian flavor.",
+      "form_alpha": "Refined edible oil from Form, with a neutral taste and high heat tolerance.",
+      "form_priyagold": "Premium refined oil from Form Priya Gold, great for deep frying.",
+      "form_ruchigold": "Ruchi‑quality refined oil, suitable for all South‑Indian recipes.",
+      "form_firstclass": "First Class refined oil by Form, balanced for taste and health.",
+      "amul": "Rich and aromatic cow ghee from Amul, perfect for traditional cooking.",
+      "hatsun": "Pure Hatsun cow ghee, made from fresh cream with natural aroma.",
+      "nani": "Affordable small‑pack ghee by Nani for quick everyday cooking.",
+      "grb": "High-quality GRB cow ghee, ideal for sweets and special dishes."
+    }
+  }
+}
+

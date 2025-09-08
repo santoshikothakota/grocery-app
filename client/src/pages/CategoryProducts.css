@@ -1,0 +1,19 @@
+.category-products-page {
+  padding: 2rem;
+  background-color: #eaffea;
+  min-height: 100vh;
+}
+
+.category-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 2rem;
+}
+
+.not-available-message {
+  text-align: center;
+  font-size: 18px;
+  color: #555;
+}

@@ -1,0 +1,27 @@
+.order-now-btn {
+  font-size: 20px;
+  padding: 12px 26px;
+  border-radius: 25px;
+  background-color: #6B46C1;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .order-now-btn {
+    font-size: 16px;
+    padding: 10px 20px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .order-now-btn {
+    font-size: 14px;
+    padding: 8px 18px;
+  }
+}

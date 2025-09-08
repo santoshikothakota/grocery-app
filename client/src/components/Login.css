@@ -1,0 +1,229 @@
+.login-container {
+  width: 100%;
+  max-width: 420px;
+  background: white;
+  padding: 40px 30px;
+  border-radius: 20px;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+/* Optional: Only include this file if you need custom styling */
+
+.login-modal {
+  z-index: 50;
+}
+
+.login-modal .overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
+}
+
+.login-modal .close-button:hover {
+  color: #dc2626; /* Tailwind's red-600 */
+}
+.login-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 16px;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  background: white;
+  padding: 40px 30px;
+  border-radius: 20px;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: #555;
+  cursor: pointer;
+}
+
+.login-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #2e7d32;
+  margin-bottom: 30px;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 16px;
+  border: 1px solid #130a0a;
+  border-radius: 999px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 14px;
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(45, 39, 39);
+  background-color: #4caf50;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #388e3c;
+}
+
+.divider {
+  margin: 25px 0;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 14px;
+  color: #777;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #ccc;
+  margin: 0 10px;
+}
+
+.social-logins button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  margin-top: 10px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  cursor: pointer;
+  border: 1px solid #1f1414;
+  background-color: rgb(19, 12, 12);
+  transition: all 0.3s ease;
+}
+
+.apple-btn:hover {
+  background-color: #000;
+  color: rgb(10, 4, 4);
+}
+
+.google-btn:hover {
+  background-color: #388e3c;
+}
+
+.icon {
+  font-size: 22px;
+}
+
+
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #45a049;
+}
+.google-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: #000;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.google-btn .icon {
+  font-size: 20px;
+}
+
+.google-btn .arrow {
+  display: inline-block;
+  transform: translateX(0);
+  transition: transform 0.3s ease;
+}
+
+.google-btn:hover .arrow {
+  transform: translateX(5px);
+}
+
+/* Responsive */
+@media screen and (max-width: 480px) {
+  .login-container {
+    padding: 25px 20px;
+    max-width: 100%;
+  }
+
+  .login-title {
+    font-size: 22px;
+  }
+
+  .login-btn, .social-logins button {
+    font-size: 16px;
+    padding: 12px;
+  }
+  .login-error {
+  color: #e53e3e;
+  background: #fff5f5;
+  border: 1px solid #feb2b2;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+}
