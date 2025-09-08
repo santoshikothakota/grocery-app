@@ -4,16 +4,17 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const mongoose = require("mongoose");
 const Fuse = require("fuse.js"); // For fuzzy search
+require("dotenv").config(); // To use .env variables
 
 const app = express();
-const PORT = 5000;
 
 // -------------------- MIDDLEWARES --------------------
 app.use(cors()); // Allow requests from different ports (frontend)
 app.use(bodyParser.json());
 
 // -------------------- MONGODB CONNECTION --------------------
-const MONGO_URI = "mongodb://127.0.0.1:27017/groceryDB";
+// Use environment variable if available (for Render/Atlas), else local MongoDB
+const MONGO_URI = process.env.MONGO_URI || "mongodb://127.0.0.1:27017/groceryDB";
 
 mongoose
   .connect(MONGO_URI)
@@ -42,12 +43,12 @@ const orderSchema = new mongoose.Schema({
 });
 const Order = mongoose.model("Order", orderSchema);
 
-// ✅ Product schema (updated to match DB)
+// Product schema
 const productSchema = new mongoose.Schema({
   name: String,
   category: String,
   price: Number,
-  quantity: String,   // was Number, but your DB stores "1kg", "5kg"
+  quantity: String, // e.g. "1kg", "500g"
   description: String,
   rating: Number,
   inStock: Boolean,
@@ -141,7 +142,7 @@ app.get("/api/search", async (req, res) => {
   try {
     console.log(`🔍 Searching for: "${query}"`);
 
-    // 1️⃣ Exact MongoDB regex search (case-insensitive)
+    // Regex search
     let results = await Product.find({
       $or: [
         { name: { $regex: query, $options: "i" } },
@@ -150,17 +151,14 @@ app.get("/api/search", async (req, res) => {
       ],
     });
 
-    console.log(`📦 Regex results found: ${results.length}`);
-
-    // 2️⃣ If nothing found, use Fuse.js fuzzy search
+    // Fuzzy search if regex fails
     if (results.length === 0) {
       const allProducts = await Product.find();
       const fuse = new Fuse(allProducts, {
         keys: ["name", "category", "description"],
-        threshold: 0.6, // Adjust for fuzziness
+        threshold: 0.6,
       });
       results = fuse.search(query).map((r) => r.item);
-      console.log(`📦 Fuse results found: ${results.length}`);
     }
 
     res.json(results);
@@ -169,6 +167,7 @@ app.get("/api/search", async (req, res) => {
     res.status(500).json({ message: "Error searching products" });
   }
 });
+
 // 6️⃣ Get single product by ID
 app.get("/api/products/:id", async (req, res) => {
   try {
@@ -183,8 +182,8 @@ app.get("/api/products/:id", async (req, res) => {
   }
 });
 
-
 // -------------------- START SERVER --------------------
+const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
-  console.log(`🚀 Server running on http://localhost:${PORT}`);
+  console.log(`🚀 Server running on port ${PORT}`);
 });
