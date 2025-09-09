@@ -9,11 +9,10 @@ require("dotenv").config(); // To use .env variables
 const app = express();
 
 // -------------------- MIDDLEWARES --------------------
-app.use(cors()); // Allow requests from different ports (frontend)
+app.use(cors()); // Allow requests from different origins
 app.use(bodyParser.json());
 
 // -------------------- MONGODB CONNECTION --------------------
-// Use environment variable if available (for Render/Atlas), else local MongoDB
 const MONGO_URI = process.env.MONGO_URI || "mongodb://127.0.0.1:27017/groceryDB";
 
 mongoose
@@ -22,8 +21,6 @@ mongoose
   .catch((err) => console.error("❌ MongoDB connection error:", err));
 
 // -------------------- SCHEMAS & MODELS --------------------
-
-// Contact schema
 const contactSchema = new mongoose.Schema({
   name: String,
   email: String,
@@ -32,7 +29,6 @@ const contactSchema = new mongoose.Schema({
 });
 const Contact = mongoose.model("Contact", contactSchema);
 
-// Order schema
 const orderSchema = new mongoose.Schema({
   customerName: String,
   customerEmail: String,
@@ -43,7 +39,6 @@ const orderSchema = new mongoose.Schema({
 });
 const Order = mongoose.model("Order", orderSchema);
 
-// Product schema
 const productSchema = new mongoose.Schema({
   name: String,
   category: String,
@@ -58,7 +53,12 @@ const Product = mongoose.model("Product", productSchema);
 
 // -------------------- ROUTES --------------------
 
-// 1️⃣ Contact form
+// Root route (test)
+app.get("/", (req, res) => {
+  res.send("🚀 Grocery Backend is working!");
+});
+
+// Contact form
 app.post("/api/contact", async (req, res) => {
   const { name, email, message } = req.body;
   if (!name || !message)
@@ -74,7 +74,7 @@ app.post("/api/contact", async (req, res) => {
   }
 });
 
-// 2️⃣ Submit order
+// Submit order
 app.post("/api/order", async (req, res) => {
   const { customerName, customerEmail, cartItems, totalAmount, paymentMethod } = req.body;
 
@@ -97,7 +97,7 @@ app.post("/api/order", async (req, res) => {
   }
 });
 
-// 3️⃣ Add a new product
+// Add new product
 app.post("/api/products", async (req, res) => {
   const { name, category, price, quantity, description, rating, inStock, loose } = req.body;
 
@@ -123,7 +123,7 @@ app.post("/api/products", async (req, res) => {
   }
 });
 
-// 4️⃣ Get all products
+// Get all products
 app.get("/api/products", async (req, res) => {
   try {
     const products = await Product.find();
@@ -134,10 +134,10 @@ app.get("/api/products", async (req, res) => {
   }
 });
 
-// 5️⃣ Search products (regex + fuzzy fallback)
+// Search products
 app.get("/api/search", async (req, res) => {
   const query = req.query.q ? req.query.q.trim() : "";
-  if (!query) return res.json([]); // No search term → empty list
+  if (!query) return res.json([]);
 
   try {
     console.log(`🔍 Searching for: "${query}"`);
@@ -168,7 +168,7 @@ app.get("/api/search", async (req, res) => {
   }
 });
 
-// 6️⃣ Get single product by ID
+// Get single product by ID
 app.get("/api/products/:id", async (req, res) => {
   try {
     const product = await Product.findById(req.params.id);
