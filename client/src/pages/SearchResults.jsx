@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useLocation, Link } from "react-router-dom";
 import axios from "axios";
+import { BASE_URL } from "../config"; // adjust path if needed
 
 // Custom hook to parse query params
 function useQuery() {
@@ -20,7 +21,7 @@ const SearchResults = () => {
     setError(null);
 
     axios
-      .get(`http://localhost:5000/api/search?q=${encodeURIComponent(query)}`)
+      .get(`${BASE_URL}/api/search?q=${encodeURIComponent(query)}`)
       .then((res) => {
         setResults(res.data || []);
         setLoading(false);
@@ -57,12 +58,11 @@ const SearchResults = () => {
       {results.length > 0 ? (
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {results.map((product) => {
-            // Make sure we have a valid ID (MongoDB _id OR local id)
             const productId = product._id || product.id;
 
             return (
               <Link
-                to={`/product/${productId}`} // 👈 dynamic product page
+                to={`/product/${productId}`}
                 key={productId}
                 className="border rounded-lg p-4 shadow hover:shadow-lg transition block"
               >
