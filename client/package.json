@@ -4,24 +4,19 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "tailwind:init": "tailwindcss init -p",
     "dev": "vite",
     "build": "vite build",
+    "preview": "vite preview",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "tailwind:init": "tailwindcss init -p"
   },
   "dependencies": {
-    "@tailwindcss/vite": "^4.1.8",
     "axios": "^1.11.0",
-    "body-parser": "^2.2.0",
-    "cors": "^2.8.5",
-    "express": "^5.1.0",
     "firebase": "^11.9.1",
     "framer-motion": "^12.17.0",
     "i18next": "^25.2.1",
     "i18next-browser-languagedetector": "^8.1.0",
     "lucide-react": "^0.513.0",
-    "nodemailer": "^7.0.5",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-hot-toast": "^2.5.2",
@@ -32,12 +27,6 @@
     "react-toastify": "^11.0.5",
     "slick-carousel": "^1.8.1"
   },
-  "scripts": {
-  "start": "react-scripts start",
-  "build": "react-scripts build",
-  "test": "react-scripts test",
-  "eject": "react-scripts eject"
-},
   "devDependencies": {
     "@eslint/js": "^9.25.0",
     "@tailwindcss/cli": "^4.1.8",
@@ -54,7 +43,7 @@
     "tailwindcss": "^4.1.8",
     "vite": "^6.3.5"
   },
-  "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
+  "description": "React + Vite + Tailwind client for grocery app",
   "main": "eslint.config.js",
   "keywords": [],
   "author": "",
